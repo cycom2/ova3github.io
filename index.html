@@ -1,16 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang='en' class=''>
 
 <head>
-  <title> Ova </title>
+
+  <meta charset='UTF-8'>
+  <title>Prueba de barra</title>
+
+  
+
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+}
+/* Encabezado Principal */
+.header-index {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    background-color: #D7D7D7; 
+    height: 80px; 
+}
+/* Contenedor de los logos */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    margin-left: 40px; 
+  }
+/* Contenedor de los logos */
+.icon-bar {
+  width: 100%; /*Largo*/
+  background-color: #990000; /*Color de Fondo*/
+  overflow: auto; /*Barra*/
+}
+.icon-bar a {
+  float: left; /*flutuando para esquerda*/
+  width: 20%; /*Largura*/
+  text-align: center; /*texto no centro*/
+  padding: 15px 0; /*Distância entre conteúdos*/
+  transition: all 0.3s ease; /*transição entre dois estados*/
+  color: white; /*cor do conteúdo*/
+  font-size: 16px; /*tamanho da fonte*/
+}
+.icon-bar a:hover{ /*apontador*/
+    background-color: #200;
+}
+.active {
+  background-color: #CF010B;
+}
+.text-center {
+  padding:180px;
+  text-align:center;
+  font-size: 24px;
+}
+/*-----------------------------*/
+footer {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  bottom: 0; /*posição vertical 0*/
+  position: fixed; /*Fixo no rodapé*/
+  left: 0; /*fixo na esquerda*/
+  right: 0; /*fixo na direita*/
+  text-align: center; /*Texto no centro*/
+  z-index: 999; /*Elemento sobreposto*/
+}
+footer p {
+  margin: 10px 0;
+}
+footer i {
+  color:;
+}
+footer a {
+  color: #3c97bf;
+  text-decoration: none; /*sem decoração*/
+}
+  </style>
+
+  
 </head>
 
 <body>
-  <div>
-    <h1>Botones</h1>
-    <a href="https://co">
-      
+  <head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Contenedor de los Logos -->
+</head>
+<body>
+
+  <!-- Encabezado Principal -->
+  <header class="header-index">
+   
+    
+    <!-- Contenedor de los Logos -->
+    <div class="logo-container">
+      <img src="assets/img/EscudoFI-UNAM.png" alt="Logo FI">
+      <img src="assets/img/FINegro.png" alt="Logo FI">
+      <img src="assets/img/LogUCREMDI.png" alt="Logo FI">
+    </div>
+    
+    <!-- Botón de Búsqueda -->
+    
+    <button class="search-button">Búsqueda</button>
+  </header>
+    
   </div>
+  
+  <div class="icon-bar">
+    <a class="active" href="#"><i class="fa fa-home"></i>Inicio</a>
+    <a href="#"><i class="fa fa-envelope"></i> División</a>
+    <a href="#"><i class="fa fa-globe"></i>Asignatura</a>
+    <a href="#"><i class="fa fa-trash"></i> Temas</a>
+    <a href="#"><i class="fa fa-search"></i>Otro</a>
+  </div>
+  <div class="text-center"><strong>Aprovechamiento de la barra de menú</strong></div>
+  
+  <!--footer-->
+  <footer>
+	<p>ll<i class="fa fa-github"></i>
+    <a target="_blank" href="">aam</a>
+	</p>
+</footer>
+</body>
+  
+  
 </body>
 
 </html>
